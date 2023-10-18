@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="surveyform.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="outerdiv">
+
+       <div class="innerdiv">
+        <h2>Customer Service Form</h2>
+        
+        <div class="formdiv" >
+            <form action="" id="survey_form">
+                <div class="first_last_name_div">
+                    <div class="firstnamediv">
+                        <label for="firstname">First Name</label><br>
+                        <input id="firstname" type="text">
+                    </div>
+                    <div class="lastnamediv">
+                        <label for="lastname">Last Name</label><br>
+                        <input id="lastname" type="text">
+                    </div>
+                </div>
+               <div>
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" id="dateofbirth">
+               </div>
+               <div class="select_Country_div">
+                <label for="selectcountry">Select Your Country</label>
+                  <select id="selectcountry" >
+                    <option >Select</option>
+                    <option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="China">China</option>
+                    <option value="Brzile">Brazile</option>
+                  </select>
+               </div>
+               <div class="gende_div">
+                <label>Gender</label> 
+                 <div>                  
+                    <input type="radio" id="gender" name="choice" value="Male">
+                    <p >Male</p> 
+                 </div>
+                 <div>           
+                    <input type="radio" id="gender" name="choice" value="Female">
+                    <p >Female</p>
+                 </div> 
+                  <input type="radio" id="other" name="choice" value="other">
+                  <p >Other</p>
+               </div>
+               <div>
+                <label for="proffession">Proffession</label>
+                <input type="text" id="proffession"><br>
+                <label for="email">Email</label>
+                <input type="email" id="eamil"><br>
+                <label for="mobilenumber">Mobile Number</label>
+                <input type="number" id="mobilenumber">
+               </div>
+
+               <div class="submit_reset_div">
+                  <button type="reser">Reset</button>
+                  <button type="submit" onclick="openCustomModal(event)">Submit</button>
+               </div>
+    
+            </form>
+
+        </div>
+       </div>
+    </div>
+
+
+
+
+
+    <div id="custom-modal" class="custom-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCustomModal()">&times;</span>
+            <h3>Submitted Details</h3>
+            <p id="Submitted_details1"></p>
+            <p id="Submitted_details2"></p>
+            <p id="Submitted_details3"></p>
+            <p id="Submitted_details4"></p>
+            <p id="Submitted_details5"></p>
+            <p id="Submitted_details6"></p>
+            <p id="Submitted_details7"></p>
+            <p id="Submitted_details8"></p>
+        </div>
+    </div>
+    
+
+    <script src="surveyform.js" > </script>
+</body>
+</html>

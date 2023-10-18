@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.outer_div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.inner_div{
+    width: 50%;
+    padding: 10px;
+    margin: 40px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)  ;
+}
+#inputForm button{
+    border: none;
+    padding: 5px 8px;
+    background-color: blue;
+    border-radius: 5px;
+}
+#inputArray{
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black;
+    width: 50%;
+}
